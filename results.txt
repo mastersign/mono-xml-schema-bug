@@ -1,0 +1,204 @@
+Results from mono 2.6.7
+-----------------------
+
+Check type 'string' with 'abc' ... success
+Check type 'normalizedString' with 'abc' ... success
+Check type 'token' with 'abc' ... success
+Check type 'language' with 'en' ... success
+Check type 'Name' with 'abc' ... success
+Check type 'NCName' with 'abc' ... success
+Check type 'ID' with 'abc' ... success
+Check type 'ENTITY' with 'abc' ... success
+Check type 'NMTOKEN' with 'abc' ... success
+Check type 'boolean' with 'true' ... success
+Check type 'decimal' with '1' ... success
+Check type 'integer' with '1' ... success
+Check type 'nonPositiveInteger' with '0' ... success
+Check type 'negativeInteger' with '-1' ... success
+Check type 'long' with '9223372036854775807' ... success
+Check type 'int' with '2147483647' ... success
+Check type 'short' with '32767' ... success
+Check type 'byte' with '127' ... success
+Check type 'nonNegativeInteger' with '0' ... success
+Check type 'unsignedLong' with '18446744073709551615' ... success
+Check type 'unsignedInt' with '4294967295' ... success
+Check type 'unsignedShort' with '65535' ... success
+Check type 'unsignedByte' with '255' ... success
+Check type 'positiveInteger' with '1' ... success
+Check type 'float' with '1.1' ... success
+Check type 'double' with '1.1' ... success
+Check type 'time' with '00:00:00' ... success
+Check type 'date' with '1999-12-31' ... success
+Check type 'dateTime' with '1999-12-31T00:00:00.000' ... success
+Check type 'duration' with 'P1Y2M3DT10H30M' ... success
+Check type 'gYearMonth' with '1999-01' ... success
+Check type 'gYear' with '1999' ... success
+Check type 'gMonthDay' with '--12-31' ... success
+Check type 'gMonth' with '--12' ... failed with Exception:
+	XmlSchema error: Attribute value is invalid against its data type None
+Check type 'gDay' with '---31' ... success
+Check type 'base64Binary' with 'AbCd eFgH IjKl 019+' ... success
+Check type 'hexBinary' with '0123456789ABCDEF' ... success
+Check type 'anyURI' with 'https://www.server.com' ... success
+Check type 'QName' with 'xml:abc' ... success
+38 from 39 succeeded.
+
+Results from mono 2.10.8
+------------------------
+
+Check type 'string' with 'abc' ... success
+Check type 'normalizedString' with 'abc' ... success
+Check type 'token' with 'abc' ... success
+Check type 'language' with 'en' ... success
+Check type 'Name' with 'abc' ... success
+Check type 'NCName' with 'abc' ... success
+Check type 'ID' with 'abc' ... success
+Check type 'ENTITY' with 'abc' ... success
+Check type 'NMTOKEN' with 'abc' ... success
+Check type 'boolean' with 'true' ... success
+Check type 'decimal' with '1' ... success
+Check type 'integer' with '1' ... success
+Check type 'nonPositiveInteger' with '0' ... success
+Check type 'negativeInteger' with '-1' ... success
+Check type 'long' with '9223372036854775807' ... success
+Check type 'int' with '2147483647' ... success
+Check type 'short' with '32767' ... success
+Check type 'byte' with '127' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:byte
+Check type 'nonNegativeInteger' with '0' ... success
+Check type 'unsignedLong' with '18446744073709551615' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedLong
+Check type 'unsignedInt' with '4294967295' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedInt
+Check type 'unsignedShort' with '65535' ... success
+Check type 'unsignedByte' with '255' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedByte
+Check type 'positiveInteger' with '1' ... success
+Check type 'float' with '1.1' ... success
+Check type 'double' with '1.1' ... success
+Check type 'time' with '00:00:00' ... success
+Check type 'date' with '1999-12-31' ... success
+Check type 'dateTime' with '1999-12-31T00:00:00.000' ... success
+Check type 'duration' with 'P1Y2M3DT10H30M' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:duration
+Check type 'gYearMonth' with '1999-01' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gYearMonth
+Check type 'gYear' with '1999' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gYear
+Check type 'gMonthDay' with '--12-31' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gMonthDay
+Check type 'gMonth' with '--12' ... failed with Exception:
+	XmlSchema error: Attribute value is invalid against its data type None
+Check type 'gDay' with '---31' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gDay
+Check type 'base64Binary' with 'AbCd eFgH IjKl 019+' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:base64Binary
+Check type 'hexBinary' with '0123456789ABCDEF' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:hexBinary
+Check type 'anyURI' with 'https://www.server.com' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:anyURI
+Check type 'QName' with 'xml:abc' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:QName
+25 from 39 succeeded.
+
+Results from mono 3.0.10
+------------------------
+
+Check type 'string' with 'abc' ... success
+Check type 'normalizedString' with 'abc' ... success
+Check type 'token' with 'abc' ... success
+Check type 'language' with 'en' ... success
+Check type 'Name' with 'abc' ... success
+Check type 'NCName' with 'abc' ... success
+Check type 'ID' with 'abc' ... success
+Check type 'ENTITY' with 'abc' ... success
+Check type 'NMTOKEN' with 'abc' ... success
+Check type 'boolean' with 'true' ... success
+Check type 'decimal' with '1' ... success
+Check type 'integer' with '1' ... success
+Check type 'nonPositiveInteger' with '0' ... success
+Check type 'negativeInteger' with '-1' ... success
+Check type 'long' with '9223372036854775807' ... success
+Check type 'int' with '2147483647' ... success
+Check type 'short' with '32767' ... success
+Check type 'byte' with '127' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:byte
+Check type 'nonNegativeInteger' with '0' ... success
+Check type 'unsignedLong' with '18446744073709551615' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedLong
+Check type 'unsignedInt' with '4294967295' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedInt
+Check type 'unsignedShort' with '65535' ... success
+Check type 'unsignedByte' with '255' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:unsignedByte
+Check type 'positiveInteger' with '1' ... success
+Check type 'float' with '1.1' ... success
+Check type 'double' with '1.1' ... success
+Check type 'time' with '00:00:00' ... success
+Check type 'date' with '1999-12-31' ... success
+Check type 'dateTime' with '1999-12-31T00:00:00.000' ... success
+Check type 'duration' with 'P1Y2M3DT10H30M' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:duration
+Check type 'gYearMonth' with '1999-01' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gYearMonth
+Check type 'gYear' with '1999' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gYear
+Check type 'gMonthDay' with '--12-31' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gMonthDay
+Check type 'gMonth' with '--12' ... failed with Exception:
+	XmlSchema error: Attribute value is invalid against its data type None
+Check type 'gDay' with '---31' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:gDay
+Check type 'base64Binary' with 'AbCd eFgH IjKl 019+' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:base64Binary
+Check type 'hexBinary' with '0123456789ABCDEF' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:hexBinary
+Check type 'anyURI' with 'https://www.server.com' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:anyURI
+Check type 'QName' with 'xml:abc' ... failed with Exception:
+	XmlSchema error: Failed to convert attribute value to type http://www.w3.org/2001/XMLSchema:QName
+25 from 39 succeeded.
+
+Results from .NET 3.5
+---------------------
+
+Check type 'string' with 'abc' ... success
+Check type 'normalizedString' with 'abc' ... success
+Check type 'token' with 'abc' ... success
+Check type 'language' with 'en' ... success
+Check type 'Name' with 'abc' ... success
+Check type 'NCName' with 'abc' ... success
+Check type 'ID' with 'abc' ... success
+Check type 'ENTITY' with 'abc' ... success
+Check type 'NMTOKEN' with 'abc' ... success
+Check type 'boolean' with 'true' ... success
+Check type 'decimal' with '1' ... success
+Check type 'integer' with '1' ... success
+Check type 'nonPositiveInteger' with '0' ... success
+Check type 'negativeInteger' with '-1' ... success
+Check type 'long' with '9223372036854775807' ... success
+Check type 'int' with '2147483647' ... success
+Check type 'short' with '32767' ... success
+Check type 'byte' with '127' ... success
+Check type 'nonNegativeInteger' with '0' ... success
+Check type 'unsignedLong' with '18446744073709551615' ... success
+Check type 'unsignedInt' with '4294967295' ... success
+Check type 'unsignedShort' with '65535' ... success
+Check type 'unsignedByte' with '255' ... success
+Check type 'positiveInteger' with '1' ... success
+Check type 'float' with '1.1' ... success
+Check type 'double' with '1.1' ... success
+Check type 'time' with '00:00:00' ... success
+Check type 'date' with '1999-12-31' ... success
+Check type 'dateTime' with '1999-12-31T00:00:00.000' ... success
+Check type 'duration' with 'P1Y2M3DT10H30M' ... success
+Check type 'gYearMonth' with '1999-01' ... success
+Check type 'gYear' with '1999' ... success
+Check type 'gMonthDay' with '--12-31' ... success
+Check type 'gMonth' with '--12' ... success
+Check type 'gDay' with '---31' ... success
+Check type 'base64Binary' with 'AbCd eFgH IjKl 019+' ... success
+Check type 'hexBinary' with '0123456789ABCDEF' ... success
+Check type 'anyURI' with 'https://www.server.com' ... success
+Check type 'QName' with 'xml:abc' ... success
+39 from 39 succeeded.
